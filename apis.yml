@@ -1,7 +1,17 @@
 aid: lugg
 name: Lugg
-description: Lugg is a company surfaced as a portfolio company of y-combinator and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Lugg is an on-demand moving and delivery service that connects customers with
+  background-checked movers and trucks for same-day and scheduled jobs across
+  20+ U.S. metropolitan areas. Beyond consumer moves, Lugg handles furniture and
+  appliance delivery, junk removal and donation pickups, and labor-only help,
+  with real-time tracking and in-app payment. Lugg also publishes a partner /
+  developer REST API (documented at docs.lugg.com, served from api.lugg.com)
+  that lets retailers, marketplaces, and platforms embed Lugg delivery: it
+  exposes OAuth2 authentication, quotes, bookings and multi-stop booking flows,
+  schedules, and webhook endpoints, with a documented sandbox environment,
+  pagination, rate limiting, and error semantics. Lugg is a Y Combinator-backed
+  company.
 url: https://raw.githubusercontent.com/api-evangelist/lugg/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,14 +19,77 @@ x-backed-by:
 - y-combinator
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
+image: https://lugg.com/favicon.ico
 tags:
 - Company
-apis: []
+- Logistics
+- Delivery
+- Moving
+- Last Mile
+- Transportation
+- On-Demand
+- Webhooks
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+apis:
+- name: Lugg API
+  description: >-
+    Lugg's partner/developer REST API for embedding on-demand moving and
+    delivery: OAuth2 authentication, quotes, bookings, multi-stop booking flows,
+    schedules, and webhook endpoints, with a documented sandbox environment,
+    pagination, rate limiting, and RFC-style error semantics.
+  humanURL: https://docs.lugg.com
+  baseURL: https://api.lugg.com
+  properties:
+  - type: Documentation
+    url: https://docs.lugg.com
+  - type: APIReference
+    url: https://docs.lugg.com
+common:
+- type: DeveloperPortal
+  url: https://docs.lugg.com
+- type: Documentation
+  url: https://docs.lugg.com
+- type: APIReference
+  url: https://docs.lugg.com
+- type: Website
+  url: https://lugg.com
+- type: Blog
+  url: https://lugg.com/blog
+- type: Authentication
+  url: authentication/lugg-authentication.yml
+- type: Conventions
+  url: conventions/lugg-conventions.yml
+- type: Webhooks
+  url: asyncapi/lugg-webhooks-asyncapi.yml
+- type: Sandbox
+  url: sandbox/lugg-sandbox.yml
+- type: ErrorCatalog
+  url: errors/lugg-problem-types.yml
+- type: DomainSecurity
+  url: security/lugg-domain-security.yml
+- type: LLMsTxt
+  url: llms/lugg-llms.txt
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 8
+  pass: local-v1
