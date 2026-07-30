@@ -1,0 +1,25 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.lugg.com
+spec_type: Webhooks
+docs: https://docs.lugg.com
+summary: >-
+  The Lugg API publishes a webhook event surface. The reference at docs.lugg.com
+  exposes an "Integrations" tag group with a "Webhook endpoints" resource for
+  registering and managing webhook endpoints, plus a "webhook" navigation node.
+  This captures the confirmed existence of the webhook surface; the individual
+  event types and payload schemas render client-side in the Scalar reference and
+  were not machine-extractable in this pass — capture them verbatim on the next
+  run that can read the underlying OpenAPI document. No AsyncAPI document is
+  published; this is a webhook (HTTP callback) surface.
+webhooks:
+  management:
+    resource: Webhook endpoints
+    operations_documented: true
+    notes: >-
+      CRUD-style management of webhook endpoint registrations under the
+      Integrations tag group.
+  events: []
+  events_note: >-
+    Event catalog not extractable from the server-rendered reference in this
+    pass; not fabricated.

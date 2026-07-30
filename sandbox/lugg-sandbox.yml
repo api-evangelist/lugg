@@ -1,0 +1,16 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.lugg.com
+docs: https://docs.lugg.com
+summary: >-
+  The Lugg API publishes a dedicated sandbox environment. The reference at
+  docs.lugg.com includes a "Sandbox environment" section under its overview,
+  indicating a test-vs-live separation for partners integrating quotes,
+  bookings, and webhooks before going live. The specific sandbox base URL, test
+  credentials, and any magic test values render client-side in the Scalar
+  reference and were not machine-extractable in this pass; NEVER invent them —
+  capture verbatim on the next run that can read the underlying OpenAPI/docs.
+sandbox:
+  documented: true
+  test_values: []
+  test_values_note: Not extractable in this pass; not fabricated.

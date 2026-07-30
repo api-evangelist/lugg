@@ -1,0 +1,23 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.lugg.com
+docs: https://docs.lugg.com
+summary:
+  types:
+  - oauth2
+  notes: >-
+    The Lugg API documents an OAuth-based authentication model. The reference
+    (docs.lugg.com) groups authentication under an "Authentication" tag group
+    with a dedicated "OAuth" resource for obtaining and managing access tokens.
+    The live API host is https://api.lugg.com (Render-backed; returns an
+    x-request-id on every response). Exact authorization/token URLs and scope
+    names are rendered client-side in the Scalar reference and were not
+    machine-extractable in this pass; capture them verbatim on the next run that
+    can read the underlying OpenAPI document.
+schemes:
+- name: OAuth
+  type: oauth2
+  source: https://docs.lugg.com
+  evidence: >-
+    Reference navigation exposes tag-group "authentication" and tag "oauth"
+    (token issuance/management endpoints).

@@ -1,0 +1,14 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.lugg.com
+docs: https://docs.lugg.com
+summary: >-
+  The Lugg API documents its error model in a dedicated "Errors" section of the
+  reference at docs.lugg.com. The individual status codes, error envelope shape,
+  and per-error titles/remediation render client-side in the Scalar reference
+  and were not machine-extractable in this pass. This artifact records the
+  confirmed existence of a documented error reference; the concrete problem
+  types below are intentionally empty rather than fabricated — populate them
+  verbatim on the next run that can read the underlying OpenAPI document.
+format: unknown
+problems: []

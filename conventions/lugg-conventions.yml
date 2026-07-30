@@ -1,0 +1,50 @@
+generated: '2026-07-20'
+method: searched
+source: https://docs.lugg.com
+docs: https://docs.lugg.com
+summary: >-
+  Cross-cutting request/response semantics for the Lugg API, captured from the
+  published reference at docs.lugg.com and from live response headers on
+  api.lugg.com. Specific parameter names and header values that render
+  client-side in the Scalar reference were not machine-extractable in this pass
+  and are marked accordingly; nothing below is fabricated.
+authentication:
+  style: oauth2
+  ref: authentication/lugg-authentication.yml
+base_url: https://api.lugg.com
+sandbox:
+  documented: true
+  ref: sandbox/lugg-sandbox.yml
+  notes: The reference includes a dedicated "Sandbox environment" section.
+pagination:
+  documented: true
+  style: unknown
+  notes: >-
+    The reference includes a dedicated "Pagination" section; the exact style
+    (cursor vs offset) and parameter/response field names were not extractable
+    from the server-rendered page.
+rate_limiting:
+  documented: true
+  notes: >-
+    The reference includes a dedicated "Rate limiting" section. No RateLimit
+    response headers were exposed on the public /health endpoint; the limit
+    values and header names live in the authenticated API surface.
+request_tracing:
+  header: x-request-id
+  observed: true
+  notes: Confirmed live on api.lugg.com responses (echoed on /health).
+errors:
+  documented: true
+  ref: errors/lugg-problem-types.yml
+  notes: The reference includes a dedicated "Errors" section.
+webhooks:
+  documented: true
+  ref: asyncapi/lugg-webhooks-asyncapi.yml
+media_types:
+  documented: true
+  notes: The reference includes a "Media types" section (JSON expected).
+idempotency:
+  documented: false
+  notes: >-
+    No idempotency-key contract was confirmed in this pass. Do not assert an
+    Idempotency pointer unless a future run reads it from the OpenAPI/docs.

@@ -1,0 +1,23 @@
+# Lugg
+
+> Lugg is an on-demand moving and delivery service connecting customers with background-checked movers and trucks across 20+ U.S. metros. Its partner/developer REST API (docs.lugg.com, served from api.lugg.com) lets platforms embed Lugg delivery via OAuth2, quotes, bookings, multi-stop booking flows, schedules, and webhook endpoints, with a sandbox environment, pagination, rate limiting, and documented error semantics.
+
+## API
+
+- [Lugg API Reference](https://docs.lugg.com): Complete reference documentation for the Lugg API (OAuth, Quotes, Bookings, Booking Stops, Schedules, Webhook Endpoints).
+- API host: https://api.lugg.com
+
+## Docs
+
+- [Developer Portal / Documentation](https://docs.lugg.com): OAuth authentication, sandbox environment, media types, errors, rate limiting, and pagination.
+- [Website](https://lugg.com): On-demand moving, furniture & appliance delivery, junk removal, labor-only help.
+- [Blog](https://lugg.com/blog): Moving tips, guides, and stories.
+
+## Artifacts
+
+- [Authentication](authentication/lugg-authentication.yml): OAuth2 auth model.
+- [Conventions](conventions/lugg-conventions.yml): pagination, rate limiting, errors, request tracing (x-request-id).
+- [Webhooks](asyncapi/lugg-webhooks-asyncapi.yml): webhook endpoint surface under Integrations.
+- [Sandbox](sandbox/lugg-sandbox.yml): documented sandbox/test environment.
+- [Errors](errors/lugg-problem-types.yml): documented error reference.
+- [Domain Security](security/lugg-domain-security.yml): TLS/HSTS/SPF/DMARC probe results.
