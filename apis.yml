@@ -46,12 +46,15 @@ specificationVersion: '0.23'
 created: '2026-07-17'
 modified: '2026-07-20'
 image: https://lugg.com/favicon.ico
+x-docs-platform: scalar
+x-docs-platform-confidence: high
+x-docs-platform-checked: 2026-10-03
 tags:
 - Company
 - Logistics
 - Delivery
 - Moving
-- Last Mile
+- Last Mile Delivery
 - Transportation
 - On-Demand
 - Webhook
