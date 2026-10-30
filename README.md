@@ -64,6 +64,93 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Lugg is a company surfaced as a portfolio company of y-combinator and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Lugg is an on-demand moving and delivery service that connects customers with background-checked movers and trucks for same-day and scheduled jobs across 20+ U.S. metropolitan areas. Beyond consumer moves, Lugg handles furniture and appliance delivery, junk removal and donation pickups, and labor-only help, with real-time tracking and in-app payment. Lugg also publishes a partner / developer REST API (documented at docs.lugg.com, served from api.lugg.com) that lets retailers, marketplaces, and platforms embed Lugg delivery: it exposes OAuth2 authentication, quotes, bookings and multi-stop booking flows, schedules, and webhook endpoints, with a documented sandbox environment, pagination, rate limiting, and error semantics. Lugg is a Y Combinator-backed company.
 
-Backed by: y-combinator
+**Areas:** Company · Logistics · Delivery · Moving · Last Mile Delivery · Transportation · On-Demand · Webhook
+
+## Lugg on APIs.io
+
+Everything profiled for Lugg is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/lugg/](https://apis.io/providers/lugg/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [Lugg API](https://apis.io/apis/lugg/lugg-api/) — Lugg's partner/developer REST API for embedding on-demand moving and delivery: OAuth2 authentication, quotes, bookings, multi-stop booking flows, schedules,…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### AsyncAPI (1)
+
+Event-driven and webhook contracts.
+
+- [Lugg Webhooks Asyncapi](https://apis.io/asyncapis/lugg/lugg-webhooks-asyncapi/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Lugg Authentication](https://apis.io/security/lugg/lugg-authentication/)
+- [Lugg Domain Security](https://apis.io/security/lugg/lugg-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://lugg.com)
+- [Documentation](https://docs.lugg.com)
+- [API reference](https://docs.lugg.com)
+- [Blog](https://lugg.com/blog)
+
+## API Evangelist rating
+
+**Kin Score 27.1** — thin · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 73.2 |
+| Contract quality | 39.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 7.9 |
+| Developer ergonomics | 47.6 |
+| Access clarity | 0.0 |
+
+**Agent readiness 22.7** — agent-aware
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | documented (partial credit) |
+| OpenAPI Examples | — |
+| Rate Limit Signal | — |
+| Event Surface Described | yes |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 11.8** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/lugg/](https://apis.io/providers/lugg/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Lugg: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/lugg/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
